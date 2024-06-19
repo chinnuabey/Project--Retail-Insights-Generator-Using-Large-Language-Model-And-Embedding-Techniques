@@ -12,7 +12,8 @@ from langchain_google_genai import GoogleGenerativeAI
 from few_shots import few_shots
 import os
 from dotenv import load_dotenv
-load_dotenv() # take environment variables from .env (especially openai api key)
+load_dotenv() # take environment variables from .env (especially openai api key) Obtain a api and declare them in a seperate .env file
+
 
 def get_few_shot_db_chain():
 llm = GoogleGenerativeAI(google_api_key=os.environ[&quot;GOOGLE_API_KEY&quot;], model=&quot;gemini-pro&quot;,
